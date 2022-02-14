@@ -1,0 +1,11 @@
+SELECT Schedule.aud_id, COUNT(*) AS count;
+ FROM ;
+     schedule;
+ GROUP BY Schedule.aud_id;
+ INTO CURSOR tmp  NOFILTER
+
+SELECT *;
+	FROM;
+		auditory;
+	WHERE auditor_id IN (SELECT aud_id FROM tmp WHERE count > (SELECT AVG(count) FROM tmp))
+

@@ -1,0 +1,6 @@
+SELECT Auditory.aud_id;
+ FROM ;
+     auditory;
+ WHERE  ( aud_id ) NOT IN (SELECT aud_id FROM schedule WHERE day_id = 1 AND class_id = 1);
+   AND  ( capacity ) >= ( 100 )
+

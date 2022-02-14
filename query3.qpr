@@ -1,0 +1,19 @@
+SELECT a.prof_id;
+	FROM;
+	    (SELECT DISTINCT prof_id FROM schedule WHERE subject_id = 1) AS a;
+	INNER JOIN
+	    (SELECT DISTINCT prof_id FROM schedule WHERE day_id = 1) AS b;
+	ON a.prof_id = b.prof_id;
+INTO CURSOR tmp NOFILTER
+
+SELECT a.prof_id;
+	FROM;
+		tmp AS a;
+	WHERE NOT exist (SELECT * FROM schedule as sch WHERE sch.prof_id = a.prof_id AND day_id = 1 AND class_id = 1);
+INTO CURSOR tmp2
+
+SELECT pr.fname + ' ' + pr.lname AS name;
+	FROM;
+		tmp2 AS res;
+	INNER JOIN professor AS pr;
+	ON res.prof_id = pr.prof_id

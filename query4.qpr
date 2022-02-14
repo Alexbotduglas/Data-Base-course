@@ -1,0 +1,17 @@
+SELECT Schedule.day_id, COUNT(*) AS count;
+ FROM ;
+     schedule;
+ GROUP BY Schedule.day_id;
+ INTO CURSOR tmp  NOFILTER
+ 
+SELECT day_id;
+	FROM;
+		tmp;
+	WHERE (count) = (SELECT MAX(count) FROM tmp));	
+INTO CURSOR temp NOFILTER
+
+
+SELECT day_name;
+	FROM;
+		day INNER JOIN temp ON day.day_id = tmp.day_id	    
+

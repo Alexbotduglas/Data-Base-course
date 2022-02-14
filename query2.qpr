@@ -1,0 +1,4 @@
+SELECT Professor.prof_id, firstname+" "+lastname AS name;
+ FROM ;
+     professor;
+ WHERE  ( prof_id ) NOT IN (SELECT prof_id FROM schedule WHERE (day_id) = (1))
