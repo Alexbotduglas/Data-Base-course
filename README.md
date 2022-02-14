@@ -1,1 +1,1 @@
-# Data-Base-course
+# Data-Base-course-in-MAI
